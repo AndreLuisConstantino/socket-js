@@ -32,8 +32,11 @@ io.on('connection', (client) => {
 })
 
 app.get('/test', cors(), (req, res) => {
+
+    let teste = req.query.teste
+
     res.json({
-        "menes": "teste"
+        'message': teste
     })
 })
 
